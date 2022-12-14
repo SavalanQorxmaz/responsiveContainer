@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+        @mixin containerS($screenWidth, $containerWidth) {
+   
+
+            @media screen and (min-width:$screenWidth) {
+
+                .container {
+                    width: $containerWidth;
+                    border: 1px solid rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    margin: auto;
+                }
+            
+                    
+                }
+        
+          
+        }
+
+       
+   
+@include containerS(0px,100% );
+
+@include containerS(800px,90% );
+
+@include containerS(1000px,80% );
+@include containerS(1200px,60% );
+
+
+  
+
+
+
+header, main, footer {
+    margin: 20px 0px;
+}
+
+
+
+.header {
+
+    height: 10vh;
+   
+    
+}
+.main {
+    height: 50vh;
+}
+
+.footer {
+    height: 20vh;
+}
+
+
+
+
+
+
+// $bColor: red;
+// $color: green;
+// $borderColor: yellow;
+
+// @mixin mField($width: 200px, $height) {
+//     width: $width;
+//     height: $height;
+// }
+
+// @mixin mBorder($borderWidth: 10px, $borderStyle){
+    
+//     border: $borderWidth $borderStyle $borderColor;
+// }
+
+// $font-sizes: ("small": 12px, "normal": 18px, "large": 24px);
+   
+
+
+// .contain {
+    
+
+//     background-color: $bColor;
+//     font-size:  map-get($font-sizes, "large");
+
+//     .first {
+//         @include mField($height: 300px);
+//         @include mBorder(2px, solid )
+//     }
+//     .second {
+//         // @include mBorder( 5px, solid);
+//         @extend .first;
+//     }
+
+// }
+
+
+
